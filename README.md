@@ -1,6 +1,7 @@
-# Michael Porter
-# Built in 2021
+```
+# Grizzley
+Website focusing on front end design to demonstrate user login, storing user specific data, database utilization and management, and data first design.
 
-# GRIZZLY PROJECT ->
-# FRONT END DESIGN TO DEMONSTRATE USER LOGIN, STORING USER SPECIFIC DATA, DATABASE UTILIZATION AND MANAGEMENT, AND DATA FIRST DESIGN
-# Practice site to demonstrate proficiency in JS, AJAX, MYSQL, CSS, HTML5
+## Who built Grizzly
+Grizzly was built in 2021 by Michael Porter to demonstrate proficiency in JS, AJAX, MySQL, CSS, and HTML5.
+```
