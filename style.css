@@ -1,0 +1,708 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 56px;
+    min-height:95vh;
+}
+.background {
+    background-size:cover;
+    background-position: center;
+}
+.shadow {
+    border-radius:5px;
+    padding:20px;
+    }
+h1 {
+    font-size:30px;
+    margin-bottom: 20px;
+}
+.table {
+    text-align: center;
+}
+.alert {
+    text-align:center ; 
+    }
+    .loginToApplyAlert {
+        width: max-content;
+        margin: 2em auto;
+        padding: 1em 4em;
+        opacity: 0%;
+        position: absolute;
+        left: 40%;
+        top: 35em;
+    }
+    .alert-warning {
+        color: white;
+        background-color: rgb(218,165,32,0.85);
+        border-color: white;
+    }
+
+.btn-outline-dark {
+    background:transparent;
+    color:black;
+    border:1px black solid;
+}
+.btn-outline-dark:hover {
+    background:black;
+    color:white;
+    border:1px black solid;
+}
+
+.btn-dark {
+    background:black;
+    color:white;
+    border:1px black solid;
+}
+.btn-dark:hover {
+    background:transparent;
+    color:black;
+    border:1px black solid;
+}
+
+.btn-success {
+    background:#41643B;
+    color:white;
+    border:1px #41643B solid;
+}
+.btn-success:hover {
+    background: transparent;
+    color:#41643B;
+    border:1px #41643B solid;
+}
+.btn-outline-success {
+    background:transparent;
+    color:#41643B;
+    border:1px #41643B solid;
+}
+.btn-outline-success:hover {
+    background:#41643B;
+    color:white;
+    border:1px #41643B solid;
+}
+
+.btn-check:focus+.btn-success, .btn-success:focus {
+    background-color: #41643B;
+    border-color: #41643B;
+    color:white;
+}
+
+/* NAVIGATION CLASSES */
+    .navbar {
+        padding: 3px 0px;
+        background:white;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        gap: 3vw;
+    }
+    .hide {
+        display:none !important;
+    }
+    .rightNavBtnContainer {
+        display:grid;
+        grid-template-columns: repeat(2,max-content);
+        grid-gap:10px;
+    }
+    .profile_btn:hover, 
+    .logout_nav_btn:hover {
+        opacity: 75%;
+    }
+/* NAVIGATION CLASSES --- END */
+
+
+/* FOOTER CLASSES --- START */
+    .footer {
+        padding:40px;
+        background-color: black;
+        color:lightgray;
+        display: grid;
+        grid-gap: 30px;
+        justify-content: start;
+        width:100%;
+    }
+    .footer h1 {
+        font-size: 15px;
+    }
+    .contact_link {
+        text-decoration:none;
+        color:grey;
+        font-size: 20px;
+    }
+    .footerGrid {
+        display: grid;
+        grid-template-columns: repeat(5,max-content);
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    a {
+        color:grey;
+    }
+    a:hover {
+        color:lightgray;
+    }
+    @media (max-width:500px) {
+        .footer {
+            grid-gap:10px;
+        }
+        .footerGrid {
+            grid-gap: 5px;
+        }
+    }
+    .logo {
+        position: absolute;
+        right: 50px;
+        height: 80px;
+    }
+/* FOOTER CLASSES --- END */
+
+/* CONTENT PAGE CLASSES */
+    .body_container {
+        display:grid;
+        grid-template-columns: 1fr max-content;
+        }
+        .arrow_icon {
+            position:absolute;
+            left:40%;
+            top:75vh;
+        }
+        .home_pic {
+            grid-row: 1/3;
+            grid-column: 1/2;
+            }
+            #rafting_image {
+                background-image: url(images/photo_rafting.jpg);
+                padding:1em;
+            }
+            #fishing_image {
+                background-image: url(images/photo_fishing.jpg);
+            }
+            #kayaking_image {
+                background-image: url(images/photo_kayaking.jpg);
+            }
+            #trips_image {
+                background-image: url(images/photo_trips.jpg);
+            }
+        .edge_logo {
+            height:4em;
+            }
+            .edge_title {
+                font-size:15px;
+                padding: 0.75em 1.8em;
+                margin-top: 0.25em;
+                border-radius:5px;
+                background-color: black;
+                width:max-content;
+                color:white;
+            }
+        .page_text {
+            grid-row: 1/2;
+            grid-column: 2/3;
+
+            display:grid;
+            grid-gap:2em;
+            text-align:center;
+
+            width: 25em;
+            margin: 4em;
+            }
+            .home_logo {
+                width: 20em;
+                margin:0px auto;
+            }
+            .est {
+                color:goldenrod;
+                font-weight:bold;
+                margin:0px;
+            }
+            .page_text p {
+                margin:0px;
+            }
+
+    .index_grid {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        z-index: 2;
+
+        display:grid;
+        grid-gap:2em;
+    }
+    .index_row {
+        display:grid;
+        grid-template-columns: 15em 1fr;
+        grid-gap:2em;
+        padding:20px;
+    }
+    .scroll_container {
+        overflow-x:scroll;
+        }
+        .card_grid_container {
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(3, max-content);
+            }
+            .card_grid {
+                display: grid;
+                grid-gap: 2em;
+                grid-auto-flow:column;
+            }
+        .title_card {
+            background: white;
+            color:black;
+            height:20em;
+            display:grid;
+            grid-gap:2em;
+            align-content:center;
+            justify-items:center;
+            text-align:center;
+        }
+        .trip_card {
+            background: #41643B;
+            color:white;
+            width:15em;
+            height:20em;
+            border-radius:10px;
+            display:grid;
+            text-decoration:none;
+            grid-template-rows: 2em 1fr;
+            }
+            .disabled {
+                opacity:0.7;
+            }
+            .active:hover {
+                background: #54734e;
+            }
+            .trip_card_title {
+                grid-row:1/3;
+                grid-column:1/2;
+
+                transform: rotate(-90deg);
+                color:white;
+                font-weight: bold;
+                font-size: 40px;
+                width: 150px;
+                position: relative;
+                left: 2em;
+                bottom: -85px;
+            }
+            .mytrip_card .trip_card_title {
+                left: -1em;
+                bottom: -85px;
+                display: grid;
+                grid-gap: 0.25em;
+                grid-template-columns: repeat(2,max-content);
+                justify-items: center;
+                align-items: center;
+            }
+            .trip_ref_num {
+                grid-row:1/2;
+                grid-column:1/2;
+
+                font-size: 1em;
+                margin: 0.5em;
+                color: lightgray;
+                }
+                .mytrip_card .trip_ref_num {  
+                    font-size: 0.8em;
+                    text-align: center;
+                    color: goldenrod;
+                    font-weight:bold;
+                }
+            .trip_card_content {
+                grid-row:2/3;
+                grid-column:1/2;
+                
+                display:grid;
+                align-content:space-between;
+                padding:15px;
+                color: white;
+                border-radius:5px;
+                }
+                .trip_card_info {
+                    display:grid;
+                    align-self:start;
+                    text-align:end;
+                    }
+                    .trip_card_info h2 {
+                        font-size: 18px;
+                        font-weight:500;
+                    }
+                    .trip_card_info h3 {
+                        font-size: 12px;
+                        font-weight:500;
+                        font-style: italic;
+                    }
+                    .delete_mytrip_btn {
+                        width: max-content;
+                        justify-self: end;
+                        background: rgb(187, 45, 58,0.5);
+                        color:white;
+                        z-index: 3;
+                    }
+            .placeholderCard {
+                background:lightslategray;
+                align-items: center;
+                text-align:center;
+                grid-template-rows: 1fr;
+                grid-gap: 1em;
+                }
+                .pctwo {
+                    padding: 1em;
+                }
+                .placeholderCard img {
+                    height: 12em;
+                    justify-self:center;
+                }
+                .placeholderCard h1 {
+                    font-size: 2em;
+                    margin: 0px;
+                }
+                .placeholderCard a {
+                    background:transparent;
+                }
+
+/* CONTENT PAGE CLASSES -- END */
+
+
+
+
+/* ADMIN CLASSES */
+    .shadow {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.12)!important;
+    }
+    .admin_page {
+        grid-template-columns: 1fr;
+    }
+    .admin_pic {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-image: url(images/photo_admin3.jpg);
+        background-size: cover;
+        background-position:center;
+
+        display:grid;
+        justify-content:center;
+        }
+        .admin_page .home_logo {
+            width:15em;
+            padding:1em;
+            margin:2em;
+            background:white;
+        }
+
+    .admin_page .index_grid {
+        justify-content:center;
+    }
+    .admin_page .page_text {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin: 0em;
+        padding: 2em;
+        text-align:start;
+        width:100%;
+        }
+        .admin_content_container {
+            display:grid;
+            grid-template-columns: max-content 1fr;
+            grid-gap:2em;
+            align-items:start;
+            }
+            .admin_nav {
+                display: grid;
+                grid-gap: 10px;
+                align-content: start;
+                padding: 1em;
+                height: 100%;
+                }
+                .admin_nav .nav-item {
+                    text-align: center;
+                    box-shadow: 0 0 5px lightgrey;
+                    border-radius: 5px;
+                    background: #41643B;
+                }
+                .admin_nav .nav-link {
+                    color:white;
+                }
+                .admin_nav .nav-item:hover {
+                    background: #54734e;
+                }
+            .table_container {
+                min-height:20em;
+                display:grid;
+                grid-gap:2em;
+                align-content: start;
+            }
+            .table {
+                vertical-align: middle;
+            }
+            .dashboard_admin_content {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                }
+                .dashboard_item {
+                    display: grid;
+                    justify-items: center;
+                    grid-gap: 1em;
+                }
+                .number_container {
+                    border-radius: 50%;
+                    height: 2.5em;
+                    width: 2.5em;
+                    background: #41643B;
+                    color: white;
+                    font-size: 30px;
+                    display: grid;
+                    justify-items: center;
+                    align-items: center;
+                    position: relative;
+                }
+            .form_title {
+                display:grid;
+                grid-template-columns: repeat(2,max-content);
+                justify-content:space-between;
+            }
+            .add_new_btn {
+                height:max-content;
+            }
+/* ADMIN CLASSES --- END */
+
+
+/* ERROR PAGE */
+    .error_image {
+        background-image: url('images/photo_error.jpg');
+        background-position:center;
+        background-size: cover;
+
+        min-height:85vh;
+        margin:0em 2em 2em 2em;
+        padding:2em;
+        display:grid;
+        grid-template-columns: minmax(20em,1fr) 2fr;
+        align-items:center;
+    }
+    .error_text_container {
+        background: white;
+        padding:2em;
+        display:grid;
+        grid-gap:0.5em;
+        justify-items:center;
+        align-content:center;
+        text-align:center;
+        min-width: max-content;
+    }
+    .error_text_container h3 {
+        font-size:1em;
+    }
+    .btnContainer {
+        display:grid;
+        grid-template-columns: repeat(2,max-content);
+        grid-gap:1em;
+    }
+    .noResults {
+        text-align:center;
+        color:darkgrey;
+    }
+/* ERROR PAGE --- END */
+
+
+/* MODAL CLASSES */
+    .modal-header {
+        border:none;    
+        padding-right: 30px;
+        }
+        .modal-header img {
+            height:35px;
+        }
+    .modal-body {
+        padding:0px 30px 30px 30px;
+        }
+        .delete_modal .modal-body {
+            display: grid;
+            grid-gap: 1em;
+            text-align: center;
+            }
+            .delete_modal .btn_container {
+                display:grid;
+                grid-auto-flow: column;
+                grid-gap: 1em;
+            }
+            .delete_modal span {
+                color: red;
+            }
+        .trip_modal .modal-body {
+            text-align: center;
+        }
+        .login_modal .modal-body {
+            padding: 20px 0px 60px 0px;
+            width: 70%;
+            margin: 0px auto;
+        }
+        .register_modal .modal-header {
+            padding-bottom:10px;
+        }
+        .register_modal .modal-body {
+            text-align:center;
+        }
+        #register_user_form {
+            width: 75%;
+            margin: 20px auto;
+        } 
+        .modal_header_grid {
+            display:grid;
+            grid-auto-flow: column;
+            align-items: center;
+        }
+    .user_modal .modal-body img {
+        width: 100px;
+    }
+    .user_modal .left_side_modal {
+        display: grid;
+        justify-items: center;
+        border-right: 2px solid lightgray;
+        text-align:center;
+        grid-gap: 20px;
+        padding: 40px 0px;
+        padding-right: 10px;
+    }
+    .display_flights_modal table {
+        text-align:center;
+    }
+    
+    .forgot_pass_form {
+        display:grid;
+        grid-gap:10px;
+        text-align: center;
+    }
+    .forgot_pass_form h2 {
+        font-size: 20px;
+    }
+    .forgot_pass_form h3 {
+        font-size: 15px;
+    }
+    .forgot_pass_form input {
+        text-align: center;
+    }
+    
+    .trip_modal_body {
+        display:grid;
+        }
+        .modal_icon {
+        justify-self:center;
+        height:100px;
+        }
+        .trip_modal_body h1 {
+        justify-self:center;
+        }
+        .applyForm {
+        display: grid;
+        text-align:center;
+        }
+        .applyForm input {
+            text-align:center;
+        }
+        .number_of_bookings_container {
+            text-align:center;
+            }
+            .number_of_bookings_container select {
+            text-align:center;
+            }
+        .applyBtn {
+        margin-top:1em;
+        }
+    .modal_title {
+        MARGIN: 0PX;
+        FONT-SIZE: 15px;
+    }
+
+  /* PROFILE MODAL CLASSES */
+  .profile_modal body {
+    display:grid;
+    grid-gap:2em;
+    }
+    .profile_header {
+      display:grid;
+      justify-content:center;
+      text-align:center;
+      grid-gap:0.5em;
+      margin-bottom: 3em;
+      }
+      .profile_header h1 {
+        margin:0px;
+        margin-top: 0.25em;
+      }
+      .profile_header h3 {
+        margin:0px;
+        color:lightgray;
+      }
+      .profile_image {
+        display:grid;
+        justify-content: center;
+        justify-items: center;
+        }
+        .profile_icon {
+          height: 10em;
+        }
+        .edit_icon {
+          display:none;
+          height: 1.5em;
+          position: absolute;
+          top: 8em;
+        }
+      #account_detail_form, 
+      #account_detail_form input, 
+      #acount_detail_medical {
+          text-align:center;
+        }
+        #account_detail_form label {
+          color:lightgray;
+        }
+      .accordion-button:focus {
+        border-color: #54734e;
+        box-shadow: 0 0 0 0.25rem rgb(84 115 78 / 25%);
+      }
+      .accordion-button:not(.collapsed) {
+        color: #54734e;
+        background-color: rgb(84, 115, 78, 0.2);
+        border: 1px solid #54734e;
+      }
+  
+      #collapseTwo .accordion-body {
+        display:grid;
+        grid-template-columns: 1fr max-content;
+        justify-content:space-between;
+        grid-gap:2em;
+      }
+      #collapseTwo .accordion-body h3 {
+        font-size:1em;
+      }
+   /* PROFILE MODAL CLASSES - END */
+
+   /* FOOTER MODAL CLASSES - START */
+   .contact_modal_body {
+        display:grid;
+        grid-template-columns: 5em 1fr;
+        grid-column-gap:1em;
+        grid-row-gap:2em;
+        align-items: center;
+        padding: 30px;
+    }
+    .contact_modal_body img {
+        justify-self:center;
+        height: 3em;
+    }
+    .contact_modal_body h2 {
+        font-size:18px;
+        color:#41643B;
+    }
+    .contact_modal_body a {
+        text-decoration:none;
+        color:#41643B;
+    }
+    .contact_modal_body a:hover {
+        text-decoration:underline;
+    }
+    #contact_modal .modal-body {
+        padding: 30px;
+    }
+    /* FOOTER MODAL CLASSES - END */
+
+
+/* MODAL CLASSES --- END */
