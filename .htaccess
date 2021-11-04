@@ -1,0 +1,33 @@
+#RewriteOptions inherit
+# Use PHP7.3 as default
+# AddHandler application/x-httpd-ea-php73 .php
+
+# Set keep alive header
+<IfModule mod_headers.c>
+   #Header set Connection keep-alive
+</IfModule>
+
+#DirectoryIndex /GRIZZLY/index.php
+
+# Force HTTPS ACCESS
+RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+RewriteRule ^content/.*$ index.php
+RewriteRule ^includes/.*$ index.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule  . index.php [L]
+
+
+#AllowOverride Indexes
+# Set fallback as index
+#FallbackResource /index.php
+
+# Disable indexes of folders
+#Options -Indexes
+
+# Order Deny,Allow
+# Deny from 173.192.34.95
